@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOSSMeet'24</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,200;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300&display=swap');
+      </style>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./elements/navbar.css">
+    <link rel="stylesheet" href="./elements/footer.css">
+
+</head>
+
+<body>
+
+    <div class="scroll-watcher"></div>
+
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#" class="menu"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#" class="sidebar-button">About</a></li>
+            <li><a href="#" class="sidebar-button">Events</a></li>
+            <li><a href="#" class="sidebar-button">Speakers</a></li>
+            <li><a href="#" class="sidebar-button">Gallery</a></li>
+            
+        </ul>
+        <ul >
+            <li><a href="./home.html" class="logo-link">
+                <img src="./assests/logos/signal-2023-12-12-154551_002.png" alt="" class="logo navbar-logo" style="display:absolute; max-width:70%">
+                </a></li>
+            <li><a href="#" class="nav-button hideOnMobile">About</a></li>
+            <li><a href="#" class="nav-button hideOnMobile">Events</a></li>
+            <li><a href="#" class="nav-button hideOnMobile">Speakers</a></li>
+            <li><a href="#" class="nav-button hideOnMobile">Gallery</a></li>
+            <li onclick="showSidebar()"><a href="#" class="nav-button hideOnDesktop" style="fill: white;"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Welcome to </h2>
+            <h1 class="hero-title">FOSSMeet'24</h1>
+            <p class="hero-subtitle">The annual FOSS event of NIT Calicut.</p>
+            <p class="hero-subtitle">Coming <span>March 15-17th</span>.</p>
+
+            <a href="#" class="hero-button">REGISTER</a>
+        </div>
+    </div>
+
+    <div class="frame2">
+        <img src="./assests/landing-page-illustration-1.66c36e7d.svg" alt="" class="frame2-img">
+    </div>
+
+
+    <img src="./assests/signal-2023-12-12-154556_003.png" class="meow" alt="">
+
+    <div class="frame3 fm23">
+        <div class="frame3-content">
+            
+        </div>
+    </div>
+
+    <div class="frame4">
+        <div class="frame4-content">
+            <h2 class="frame4-title">About FOSSMeet</h2>
+            <p class="frame4-subtitle">FOSSMeet is the longest student Free and Open Source Software event in India. It is a platform for FOSS enthusiasts to come together and share their knowledge and ideas. The event is organized by Computer Science and Engineering Association (CSEA) and FOSSCell NITC, the FOSS club of NIT Calicut.</p>
+            <a href="#" class="frame4-button">Learn More</a>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----------------footer starts here----------------------->
+
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">CSEA</a></li>
+  	 				<li><a href="#">FOSSCell NITC</a></li>
+  	 				<li><a href="#">NITC</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">watch</a></li>
+  	 				<li><a href="#">bag</a></li>
+  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#">dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+    <!--///////////////////////////////////////////////JS for the sidebar////////////////////////-->
+    <script>
+        function showSidebar(){
+            document.querySelector('.sidebar').style.display = 'flex';
+        }
+        function hideSidebar(){
+            document.querySelector('.sidebar').style.display = 'none';
+        }
+    </script>
+    
+</body>
+</html>

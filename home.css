@@ -1,0 +1,196 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #F7A144;
+
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+    gap: 20vh;
+}
+
+.hero > *{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.hero > *{
+    color: #fff;
+}
+
+.hero h2{
+    font-size: 5vw;
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    width:fit-content;
+    overflow: hidden;
+    
+    white-space: nowrap;
+    margin: 0 auto;
+
+    animation: 
+    typing 2.5s steps(30, end);
+
+}
+
+
+.hero p{
+    font-size: 100%;
+    font-size: 3vw;
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    width:fit-content;
+    overflow: hidden;
+    
+    white-space: nowrap;
+    margin: 0 auto;
+
+    animation: 
+    typing 2.5s steps(20, end);
+
+}
+
+.hero h1{
+
+    font-size: 14vw;
+    
+    text-align: center;
+    margin-top: 20px;  
+    width:fit-content;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+
+    text-shadow:#000000 3px 4px 1px;
+
+    animation:
+    typing 1.5s steps(40, end);
+}
+
+.hero p span{
+    color: #ffffff;
+    font-size: 130%;
+    font-weight: 700;
+}
+
+.hero-content a{
+    font-size: 4vw;
+    font-weight: 500;
+
+    text-decoration: none;
+    color: #1f1c1c;
+    margin-top: 5%;
+
+    padding:1.5% 3%;
+    border-radius:100px;
+    background-color: rgb(255, 153, 0);
+    box-shadow: 0 0 10px 0 rgb(2, 2, 2,0.1);
+}
+
+.hero-content a:hover{
+    transition: 0.2s;
+    scale: 1.1;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+/*//////////////////////////////////////////////// frame2 ////////////////////////////////////////////////*/
+.frame2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.frame2 > img{
+    width: 100%;
+    height: 120%;
+    align-self: center;
+    transition: 1s;
+    opacity: 0;
+    animation: appear linear forwards;
+}
+@keyframes appear{
+    from{}
+    to{opacity: 1;}
+}
+
+
+
+
+
+
+
+
+.meow{
+
+    margin-top: 800px;
+    background-color: rgb(255, 105, 46);
+    border-radius: 50px;
+    max-width: 50%;
+    align-self: center; 
+
+    scale:0.6; opacity: 0;
+
+    animation: fade-in linear forwards;
+    animation-timeline: view(); 
+    animation-range: 230px 300px;
+
+}
+@keyframes fade-in{
+    from{}
+    to{scale:1;opacity: 1;}
+}
+
+.meow:hover{
+    transition: 0.5s;
+    scale: 1.1;
+}
+
+
+.scroll-watcher{
+    height: 2%;   
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(255, 17, 0);
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline:scroll();
+
+}
+@keyframes scroll-watcher{
+    to{scale:1 1;}
+}
