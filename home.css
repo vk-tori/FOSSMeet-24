@@ -12,6 +12,50 @@ body{
 
 }
 
+.btn-toggle:hover{
+    transition: 0.3s;
+    scale: 1.1;
+    box-shadow: 0 0 60px 0 rgb(2, 2, 2,0.1);
+}
+.btn-toggle{
+    position: fixed;
+    top: 80px;
+    right: 2px;
+    z-index: 1000;
+    background-color: rgb(255, 254, 254);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(2, 2, 2,0.1);
+}
+
+.btn-toggle img{
+    width: 30px;
+    height: 30px;
+}
+
+body.dark-theme{
+    color: #fff;
+    background-color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+      background-color: #222;
+    }
+    body.light-theme {
+        color: #222;
+      background-color: #F7A144;
+    }
+  }
+
+
+
 .hero{
     display: flex;
     flex-direction: column;
@@ -39,11 +83,10 @@ body{
 }
 
 .hero h2{
-    font-size: 5vw;
+    font-size: 4vw;
 
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
 
     width:fit-content;
     overflow: hidden;
@@ -56,6 +99,23 @@ body{
 
 }
 
+.hero h1{
+
+    font-size: 12vw;
+    text-align: center;
+    margin-top: 20px;  
+    width:fit-content;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+
+    text-shadow:#000000 3px 4px 1px;
+
+    animation:
+    typing 1.5s steps(20, end);
+}
 
 .hero p{
     font-size: 100%;
@@ -76,24 +136,7 @@ body{
 
 }
 
-.hero h1{
 
-    font-size: 14vw;
-    
-    text-align: center;
-    margin-top: 20px;  
-    width:fit-content;
-    margin-bottom: 20px;
-    overflow: hidden;
-    border-radius: 0.15em solid orange;
-    white-space: nowrap;
-    margin: 0 auto;
-
-    text-shadow:#000000 3px 4px 1px;
-
-    animation:
-    typing 1.5s steps(40, end);
-}
 
 .hero p span{
     color: #ffffff;

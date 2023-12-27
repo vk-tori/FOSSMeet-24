@@ -16,22 +16,22 @@ body{
 /* Configuring the navbar to highlight the events tab. */
 
 @media(min-width: 916px){
-    .navbar-content> :nth-child(3){
+    .navbar-content> :nth-child(2){
         background-color: #F7A144;
         padding: 0 10px;
     }
     /* Making the event tab highlighted. */
-    .navbar-content> :nth-child(3) a{
+    .navbar-content> :nth-child(2) a{
         color: black;
     }
     /* Reversing hover effect. */
-    .navbar-content> :nth-child(3) a:hover{
+    .navbar-content> :nth-child(2) a:hover{
         background-color: #F7A144;
         color: black;
     }
     
 }
-.sidebar > :nth-child(3){
+.sidebar > :nth-child(2){
     background-color: black;
     color: aliceblue;
     padding: 0 10px;

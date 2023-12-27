@@ -1,0 +1,41 @@
+.btn-toggle:hover{
+    transition: 0.3s;
+    scale: 1.1;
+    box-shadow: 0 0 60px 0 rgb(2, 2, 2,0.1);
+}
+.btn-toggle{
+    position: absolute;
+    top: 80px;
+    right: 2px;
+    z-index: 1000;
+    background-color: rgb(255, 254, 254);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(2, 2, 2,0.1);
+}
+
+.btn-toggle img{
+    width: 30px;
+    height: 30px;
+}
+
+body.dark-theme{
+    color: #fff;
+    background-color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+      background-color: #222;
+    }
+    body.light-theme {
+        color: #222;
+      background-color: #F7A144;
+    }
+  }

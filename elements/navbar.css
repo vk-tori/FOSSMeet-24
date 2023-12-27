@@ -79,7 +79,7 @@ nav li:first-child{
 }
 
 .sidebar li{
-    width:fit-content;
+        width:fit-content;
 }
 
 .sidebar a{
