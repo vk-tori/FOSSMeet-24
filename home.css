@@ -6,7 +6,12 @@
     text-decoration: none;
     list-style: none;
 }
-
+body{
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #F7A144;
+    color: #222;
+    overflow-x: hidden;
+}
 body.light-theme{
     background-color: #F7A144;
 }
@@ -70,10 +75,8 @@ body.dark-theme{
 }
 
 .hero-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     width: 100%;
 
 }
@@ -144,6 +147,7 @@ body.dark-theme{
     font-weight: 700;
 }
 
+
 .hero-content a{
     font-size: 4vw;
     font-weight: 500;
@@ -156,11 +160,16 @@ body.dark-theme{
     border-radius:100px;
     background-color: rgb(255, 153, 0);
     box-shadow: 0 0 10px 0 rgb(2, 2, 2,0.1);
+
+    animation: effect 2s infinite;
 }
 
 .hero-content a:hover{
-    transition: 0.2s;
+    transition: 0.3s ease-in-out;
     scale: 1.1;
+
+    border: white 2px solid;
+    box-shadow: #fff 0px 0px 2px;
 }
 
 @keyframes typing {
@@ -174,17 +183,17 @@ body.dark-theme{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     overflow: hidden;
     
 }
 .frame2 > img{
     width: 100%;
-    height: 90%;
     align-self: center;
     overflow-x: hidden;
     
     animation: move 50s linear infinite;
-    z-index: 2;
+    z-index: -2;
 }
 
 @keyframes move {
@@ -196,16 +205,38 @@ body.dark-theme{
     
 }
 
+@media (max-width: 800px) {
+    .frame2 > img{
+        width: 150vw;
+    }
+    .hero-content > a{
+        scale: 1.5;
+        margin: 10vh 0;
+        padding: 2vh 5vh;
+    }
+    .hero-content > h1{
+        scale: 1.2;
+        padding: 2%;
+    }
+    .hero-content > h2{
+        scale: 1.5;
+        padding: 2vh 0;
+    }
+    .hero-content > p{
+        scale: 1.2;
+        padding: 2vh 0;
+    }
+
+
+}
 
 @media (prefers-color-scheme: dark) {
     /* defaults to dark theme */
     body {
       background-color: #222;
     }
-    body.light-theme {
-        color: #222;
-        background-color: #F7A144;
-    }
+
+    
 }
 
 @media (prefers-color-scheme: light) {

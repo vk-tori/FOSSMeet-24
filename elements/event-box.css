@@ -1,0 +1,105 @@
+
+
+.events{
+    width: 100%;
+    height:fit-content;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+}
+
+.event{
+    width: 40%;
+    background-color: rgb(44, 44, 44);
+    display: block;
+
+    border: 20%;
+    border-radius: 10px;
+
+    margin: 6vh 2vh;
+    border: 1px solid greenyellow;
+    box-shadow: greenyellow 0px 0px 1px ;
+
+
+}
+
+.event h2,h1,p,span{
+    font-family:'JetBrains Mono', monospace;
+    text-decoration: none;
+    color: #fff;
+    padding: 2% 5%;
+}
+
+.event h2{
+    font-size: 1rem;
+    font-weight: 700;
+    color: greenyellow;
+
+    text-shadow: greenyellow 0px 0px 2px ;
+}
+
+.event img{
+    width: 100%;
+    object-fit: cover;
+
+    transform: translate(-10px, -20px);
+    border-radius: 10px;
+
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 2);
+
+    border: rgb(255, 255, 255) 5px solid;
+}
+
+.event img:hover{
+    transform:translate(0px, 0px);
+    scale: 1.1;
+    transition: 0.5s ease-out;
+    
+}
+
+.event-readmore-btn{
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: none;
+
+
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    background-color: #fff;
+    border: greenyellow 2px solid;
+
+    cursor: pointer;
+    transform: translate(13%, 80%);
+}
+
+.event-readmore-btn:hover{
+    border: 2px solid black;
+    background-color: #ef7900;
+    transition: 0.2s ease-out;
+    scale:1.05;
+        color: #fff;   
+}
+
+@media screen and (max-width: 768px){
+    .event{
+        width: 80%;
+    }
+}
