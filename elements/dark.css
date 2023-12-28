@@ -1,7 +1,6 @@
 .btn-toggle:hover{
     transition: 0.3s;
     scale: 1.1;
-    box-shadow: 0 0 60px 0 rgb(2, 2, 2,0.1);
 }
 .btn-toggle{
     position: absolute;
@@ -17,6 +16,8 @@
     align-items: center;
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgb(2, 2, 2,0.1);
+
+    animation: 1s ease-in-out 0s infinite alternate none running bounce;
 }
 
 .btn-toggle img{
@@ -31,11 +32,12 @@ body.dark-theme{
 
 @media (prefers-color-scheme: dark) {
     /* defaults to dark theme */
-    body {
+    body > * {
+      color: #fff;
       background-color: #222;
     }
     body.light-theme {
-        color: #222;
+      color: #222;
       background-color: #F7A144;
     }
   }
