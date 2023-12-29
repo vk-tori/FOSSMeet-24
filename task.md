@@ -61,7 +61,7 @@ color:#d45101; //orange
 
 # Tasks:
 
-## - [x] Small boxes to show events:
+## - [x] (Completed 28 Dec)Small boxes to show events:
 ![Thathva'22 image](image-1.png)
 ## -[ ] Expands on click - event box
  ![Alt text](image-2.png)
@@ -69,6 +69,9 @@ color:#d45101; //orange
 ## - [ ] Marquee overflwo issue :  debug and fix
 
 ![Alt text](image-8.png)
+
+## - [ ] image issue
+![Alt text](image-9.png)
 
 ## - [ ] Fix the box css to flex to the top lines
 ![Alt text](image-3.png)
