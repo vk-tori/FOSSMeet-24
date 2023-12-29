@@ -61,13 +61,27 @@ color:#d45101; //orange
 
 # Tasks:
 
-## - [ ] Small boxes to show events:
-  - ![Thathva'22 image](image-1.png)
-  - Expands on click
-  - ![Alt text](image-2.png)
+## - [x] Small boxes to show events:
+![Thathva'22 image](image-1.png)
+## -[ ] Expands on click - event box
+ ![Alt text](image-2.png)
 
+## - [ ] Marquee overflwo issue :  debug and fix
 
-Page design : 
+![Alt text](image-8.png)
 
-# 1. Home page:
-# 2. 
+## - [ ] Fix the box css to flex to the top lines
+![Alt text](image-3.png)
+
+## - [ ] Second navbar width malfunction  
+![Alt text](image-4.png)
+
+## - [ ]  Customize footer  
+![Alt text](image-5.png)
+
+## - [ ] Figure out light dark mode properly and not just for the body  
+![Alt text](image-7.png)  
+
+## - [ ] Make sure the dark mode button works on each screen
+![Alt text](image-6.png)
+
