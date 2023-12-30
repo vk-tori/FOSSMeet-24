@@ -1,6 +1,10 @@
 # FOSSMeet-24
 
-## A user friendy landing page for FOSSMeet'24 held at NIT Calicut    
+<h3 style="color:orange;">
+    A user friendy landing page for FOSSMeet'24 held at NIT Calicut
+</h3>
+
+
 ## Stacks used :
     - 
 
