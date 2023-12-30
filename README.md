@@ -2,14 +2,6 @@
 
 ![image](https://github.com/vk-tori/FOSSMeet-24/assets/139075087/4db648a6-9fa4-4f47-8384-96c8039454cc)
 
-
-
-$${\color{orange} A \space user \space friendy \space landing \space page \space for \space FOSSMeet'24 \space held \space at \space NIT \space Calicut }$$
-<h3 style="color:orange;">
-    A user friendy landing page for FOSSMeet'24 held at NIT Calicut
-</h3>
-
-
 ## Stacks used :
     - 
 
