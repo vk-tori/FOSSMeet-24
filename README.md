@@ -2,6 +2,8 @@
 
 ![image](https://github.com/vk-tori/FOSSMeet-24/assets/139075087/4db648a6-9fa4-4f47-8384-96c8039454cc)
 
+Last deployment at: [Github Pages](https://vk-tori.github.io/FOSSMeet-24/home.html)
+
 ## Stacks used :
     - 
 
