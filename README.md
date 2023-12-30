@@ -1,5 +1,9 @@
 # FOSSMeet-24
 
+![Heading](https://github.com/vk-tori/FOSSMeet-24/assets/139075087/a7f9560b-ed9d-4ed8-93c1-b1fdb09ea697)
+
+
+$${\color{orange} A \space user \space friendy \space landing \space page \space for \space FOSSMeet'24 \space held \space at \space NIT \space Calicut }$$
 <h3 style="color:orange;">
     A user friendy landing page for FOSSMeet'24 held at NIT Calicut
 </h3>
