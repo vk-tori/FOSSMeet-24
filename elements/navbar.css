@@ -3,6 +3,8 @@ nav{
     box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
     background-color: black;
     border: black 50% 0 solid;
+
+    border-bottom: 0.5px #ffa500 solid;
 }
 
 

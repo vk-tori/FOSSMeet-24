@@ -15,15 +15,18 @@ ul{
 }
 .footer{
 	bottom: 0;
-	background-color: rgba(29, 28, 28, 0.8);
+	background-color: rgba(29, 28, 28, 0.5);
     padding-top: 70px;
     padding: 20px 5px;
 	margin-top: 50px;
+
+	border-top: 1px orange solid;
 
 }
 
 .footer-col{
    width:40%;
+   height: fit-content;
 }
 .footer-col h4{
 	font-size: 1.5rem;

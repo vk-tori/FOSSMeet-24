@@ -66,12 +66,16 @@ body{
         --dot-color: white;
         --dot-size: 1px;
         --dot-space: 22px;
-        background:
-		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-		var(--dot-color);
+        background: linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space), linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),var(--dot-color);
     .nav{
         background-color: #ef7900;
+    }
+
+    .hero h1{
+
+    
+        text-shadow:#d45101 3px 4px 1px;
+    
     }
 }
 }
@@ -101,18 +105,18 @@ body{
 
 .hero > *{
     font-family: 'JetBrains Mono', monospace;
+    color: #fff;
 }
 
 .hero-content{
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 
 }
 
-.hero > *{
-    color: #fff;
-}
 
 .hero h2{
     font-size: 2vw;
@@ -232,6 +236,23 @@ body{
     .frame2 > img{
         width: 150vw;
     }
+    .hero-content > h1{
+        font-size: 4rem;
+    }
+
+    .hero-content h2{
+        font-size: 2rem ;
+    }
+
+    .hero-content p{
+        font-size:1.2rem;
+    }
+    .hero{
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+    }
+
+    
 }
 
 
