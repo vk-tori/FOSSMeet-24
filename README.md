@@ -9,47 +9,10 @@ Last deployment at: [Github Pages](https://vk-tori.github.io/FOSSMeet-24/home.ht
 
 ## Things I learned:
 
-
-
-  <details>
-    <summary>1. How to include html in html</summary>
-    <br>
-  Include this js library:  
-
-  ```html
-  <script src="https://unpkg.com/htmlincludejs"></script>
-  ```
-  Example on how to use:  
-
-  ```html
-  <include src="../elements/navbar.html"></include>
-  ```
-    
-  </details>
-  
-<details>
-    <summary> 2. How are assets like photos are space optimised to increase speed</summary>
-    <br>
-    <p>1. Webp format of images take much less space </br>  
-    2. SvGs are the best Gs</br>  
-    3. Html and css that repeats should always be written once and ustilised by linking</br>  
-      a. linking html is giving above</br>
-      b, lnking css is easy</br>
-    </p>
-  </details>
-  <details>
-    <summary>3. Keyframe + %tage based subtle animation anchor points</summary>
-    <br>
-    
-  </details>
-  <details>
-    <summary>4. How t</summary>
-    <br>
-    
-  </details>
- 
-  
-  
+  1. How to include html in html
+  2. How are assets like photos are optimised to increased
+  3. Keyframe + %tage based subtle animation anchor points
+  4. How t
 
 ## Challenges faced :
   1. Number one challenge i faced was lack of inspiration. </br> Using the color scheme and coming up with a landing page that is appealing to the eyes was a huOge challenge

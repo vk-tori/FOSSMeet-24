@@ -7,22 +7,28 @@
     list-style: none;
 }
 body{
+    width:100%;
     font-family: 'JetBrains Mono', monospace;
-    background-color: #F7A144;
     color: #222;
     overflow-x: hidden;
-}
-body.light-theme{
-    background-color: #F7A144;
-}
-body.dark-theme{
-    background-color: #222;
-    
+
+    animation: gradient 55s ease infinite;
+
+    --dot-bg: #ef7900;
+    --dot-color: black;
+    --dot-size: 1.4px;
+    --dot-space: 22px;
+
+    background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
 }
 
+
 .btn-toggle:hover{
-    transition: 0.3s;
-    scale: 1.1;
+    transition: 0.3s ease;
+    scale: 1.2;
     box-shadow: 0 0 60px 0 rgb(2, 2, 2,0.1);
 }
 .btn-toggle{
@@ -46,28 +52,51 @@ body.dark-theme{
     height: 30px;
 }
 
-
-
 @media (prefers-color-scheme: dark) {
     /* defaults to dark theme */
     body {
       background-color: #222;
     }
     body.light-theme {
-        color: #222;
-      background-color: #F7A144;
-    }
-  }
+	    background-size: 400% 400%;
+	    animation: gradient 55s ease infinite;
+	    height: 100%;
 
+        --dot-bg: black;
+        --dot-color: white;
+        --dot-size: 1px;
+        --dot-space: 22px;
+        background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
+    .nav{
+        background-color: #ef7900;
+    }
+}
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
 .hero{
+    height: fit-content;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5vh 0;
-    gap: 20vh;
+
+    padding: 0;
 }
 
 .hero > *{
@@ -86,12 +115,12 @@ body.dark-theme{
 }
 
 .hero h2{
-    font-size: 4vw;
+    font-size: 2vw;
 
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 
-    width:fit-content;
+    width:fit-content;  
     overflow: hidden;
     
     white-space: nowrap;
@@ -104,11 +133,11 @@ body.dark-theme{
 
 .hero h1{
 
-    font-size: 12vw;
+    font-size: 8vw;
     text-align: center;
-    margin-top: 20px;  
+  
     width:fit-content;
-    margin-bottom: 20px;
+
     overflow: hidden;
     border-radius: 0.15em solid orange;
     white-space: nowrap;
@@ -121,12 +150,11 @@ body.dark-theme{
 }
 
 .hero p{
+
     font-size: 100%;
-    font-size: 3vw;
+    font-size: 2vw;
 
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
 
     width:fit-content;
     overflow: hidden;
@@ -134,29 +162,29 @@ body.dark-theme{
     white-space: nowrap;
     margin: 0 auto;
 
-    animation: 
-    typing 2.5s steps(20, end);
+    animation: typing 2.5s steps(20, end);
 
 }
 
 
 
 .hero p span{
-    color: #ffffff;
     font-size: 130%;
     font-weight: 700;
-}
+}   
 
 
 .hero-content a{
-    font-size: 4vw;
+
+    font-size:medium;
     font-weight: 500;
 
     text-decoration: none;
     color: #1f1c1c;
-    margin-top: 5%;
 
-    padding:1.5% 3%;
+    padding: 2vw 4vw;
+    margin: 2vw;
+
     border-radius:100px;
     background-color: rgb(255, 153, 0);
     box-shadow: 0 0 10px 0 rgb(2, 2, 2,0.1);
@@ -178,13 +206,9 @@ body.dark-theme{
 }
 /*//////////////////////////////////////////////// frame2 ////////////////////////////////////////////////*/
 .frame2{
-    display: flex;
 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    overflow: hidden;
+    z-index: 1000;
+    overflow:hidden;
     
 }
 .frame2 > img{
@@ -192,56 +216,24 @@ body.dark-theme{
     align-self: center;
     overflow-x: hidden;
     
-    animation: move 50s linear infinite;
-    z-index: -2;
+    animation: move 50s ease infinite;
+    z-index: 2;
 }
 
 @keyframes move {
-    0% { transform: translateX(-10%) translateY(0%); }
+    0% { transform: translateX(-5%) translateY(0%); }
     25% { transform: translateX(0%) translateY(5%); }
-    50% { transform: translateX(10%) translateY(0%); }
+    50% { transform: translateX(5%) translateY(0%); }
     75% { transform: translateX(0%) translateY(-5%); }
-    100% { transform: translateX(-10%) translateY(0%); }
-    
+    100% { transform: translateX(-5%) translateY(0%); }
 }
 
 @media (max-width: 800px) {
     .frame2 > img{
         width: 150vw;
     }
-    .hero-content > a{
-        scale: 1.5;
-        margin: 10vh 0;
-        padding: 2vh 5vh;
-    }
-    .hero-content > h1{
-        scale: 1.2;
-        padding: 2%;
-    }
-    .hero-content > h2{
-        scale: 1.5;
-        padding: 2vh 0;
-    }
-    .hero-content > p{
-        scale: 1.2;
-        padding: 2vh 0;
-    }
-
-
 }
 
-@media (prefers-color-scheme: dark) {
-    /* defaults to dark theme */
-    body {
-      background-color: #222;
-    }
 
-    
-}
 
-@media (prefers-color-scheme: light) {
-    /* defaults to dark theme */
-    body {
-      background-color: #F7A144;
-    }
-}
+

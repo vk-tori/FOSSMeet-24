@@ -66,7 +66,7 @@ color:#d45101; //orange
 ## -[ ] Expands on click - event box
  ![Alt text](image-2.png)
 
-## - [ ] Marquee overflwo issue :  debug and fix
+## - [x] Marquee overflow issue :  debug and fix
 
 ![Alt text](image-8.png)
 
@@ -82,9 +82,7 @@ color:#d45101; //orange
 ## - [ ]  Customize footer  
 ![Alt text](image-5.png)
 
-## - [ ] Figure out light dark mode properly and not just for the body  
-![Alt text](image-7.png)  
-
+## - [ ] Figure out light dark mode properly and not just for the body    
 ## - [ ] Make sure the dark mode button works on each screen
 ![Alt text](image-6.png)
 
