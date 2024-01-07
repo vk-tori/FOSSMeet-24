@@ -96,8 +96,7 @@
   .modal-content{
     margin: auto;
     display: block;
-    width: 100%;
-    height: auto;
+    max-height: 80vh;
     
     animation-name: zoom;
     animation-duration: 0.5s;
