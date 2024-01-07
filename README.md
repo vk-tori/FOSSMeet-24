@@ -4,6 +4,8 @@
 
 Last deployment at: [Github Pages](https://vk-tori.github.io/FOSSMeet-24/home.html)
 
+### Check out how ti managed tasks and the project: [Link](./task.md)
+
 ## Stacks used :
     - 
 
